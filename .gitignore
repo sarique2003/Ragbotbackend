@@ -16,4 +16,4 @@ pip-delete-this-directory.txt
 .vscode/
 *.log
 .DS_Store
-backend/.env
+.env
