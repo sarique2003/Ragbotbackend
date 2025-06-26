@@ -2,7 +2,7 @@ from pymongo.collection import Collection
 from pymongo import ReturnDocument
 from typing import List, Dict
 from datetime import datetime
-from backend.models.message_model import Message, MessageInDB
+from models.message_model import Message, MessageInDB
 
 
 class MessageDAO:
