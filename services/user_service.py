@@ -1,9 +1,9 @@
 from fastapi import HTTPException
 from passlib.context import CryptContext
-from backend.models.user_model import User, UserInDB
+from models.user_model import User, UserInDB
 from typing import Optional
 from datetime import datetime, timedelta
-from backend.dao.user_dao import UserDAO
+from dao.user_dao import UserDAO
 from jose import jwt, JWTError
 from fastapi.security import OAuth2PasswordBearer
 import uuid
