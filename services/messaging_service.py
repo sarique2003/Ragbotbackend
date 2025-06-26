@@ -3,11 +3,11 @@ from datetime import datetime
 from typing import List
 from fastapi import HTTPException
 
-from backend.dao.message_dao import MessageDAO
-from backend.models.message_model import Message, MessageInDB
-from backend.models.ai_processing_models import MessageRecommendationContext, MessageAnalysis
-from backend.dao.user_dao import UserDAO
-from backend.services.ai_processing_service import DMAIService
+from dao.message_dao import MessageDAO
+from models.message_model import Message, MessageInDB
+from models.ai_processing_models import MessageRecommendationContext, MessageAnalysis
+from dao.user_dao import UserDAO
+from services.ai_processing_service import DMAIService
 
 
 class MessageService:
