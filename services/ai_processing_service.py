@@ -1,18 +1,18 @@
 import os
 import logging
 from typing import TypedDict, Optional
-from backend.models.user_model import User
+from models.user_model import User
 from langchain_core.messages import SystemMessage
 from langchain_openai import AzureChatOpenAI
 from langgraph.graph import StateGraph, END
 
-from backend.models.vectordb_models import PineconeConfig
-from backend.services.prompts.dm_workflow_prompts import *
+from models.vectordb_models import PineconeConfig
+from services.prompts.dm_workflow_prompts import *
 import json
-from backend.helpers import get_env_value
-from backend.models.ai_processing_models import MessageRecommendationContext, MessageAnalysis
-from backend.services.rag_service.pinecone import PineconeDB
-from backend.services.vector_db_service import VectorDbService
+from helpers import get_env_value
+from models.ai_processing_models import MessageRecommendationContext, MessageAnalysis
+from services.rag_service.pinecone import PineconeDB
+from services.vector_db_service import VectorDbService
 
 logger = logging.getLogger(__name__)
 
