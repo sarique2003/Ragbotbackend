@@ -3,15 +3,15 @@ from dependency_injector import containers, providers
 from pymongo import MongoClient
 from dotenv import load_dotenv
 
-from backend.dao.user_dao import UserDAO
-from backend.dao.message_dao import MessageDAO
-from backend.helpers import get_env_value
-from backend.models.vectordb_models import PineconeConfig
-from backend.services.ai_processing_service import DMAIService
-from backend.services.rag_service.pinecone import PineconeDB
-from backend.services.user_service import UserService
-from backend.services.messaging_service import MessageService
-from backend.services.vector_db_service import VectorDbService
+from dao.user_dao import UserDAO
+from dao.message_dao import MessageDAO
+from helpers import get_env_value
+from models.vectordb_models import PineconeConfig
+from services.ai_processing_service import DMAIService
+from services.rag_service.pinecone import PineconeDB
+from services.user_service import UserService
+from services.messaging_service import MessageService
+from services.vector_db_service import VectorDbService
 
 load_dotenv()  # .env -> env vars
 
