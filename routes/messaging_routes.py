@@ -1,8 +1,8 @@
 # backend/routes/message_route.py
 from fastapi import APIRouter, Depends, HTTPException, status, Body, Query
-from backend.container import ServicesContainer
-from backend.services.messaging_service import MessageService
-from backend.services.user_service import UserService
+from container import ServicesContainer
+from services.messaging_service import MessageService
+from services.user_service import UserService
 
 messaging_router = APIRouter(prefix="/messages")
 
