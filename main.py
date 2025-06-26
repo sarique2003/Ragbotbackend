@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 import uvicorn
 import os
-from backend.routes.user_route import user_router
-from backend.routes.messaging_routes import messaging_router
-from backend.helpers import get_env_value
+from routes.user_route import user_router
+from routes.messaging_routes import messaging_router
+from helpers import get_env_value
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
