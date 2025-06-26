@@ -1,6 +1,6 @@
 from typing import List, Optional, Union
 from pydantic import BaseModel
-from backend.models.user_model import User
+from models.user_model import User
 
 
 class MessageRecommendationContext(BaseModel):
