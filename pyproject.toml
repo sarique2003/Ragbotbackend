@@ -6,7 +6,7 @@ authors = ["Sarique-Deepsolv <mohd.sarique@deepsolv.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.10,<3.11"
 dependency-injector = "^4.48.1"
 fastapi = "^0.115.13"
 uvicorn = "^0.34.3"
