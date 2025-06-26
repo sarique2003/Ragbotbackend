@@ -19,6 +19,10 @@ python-multipart = "^0.0.20"
 bcrypt = "^4.3.0"
 langchain-core = "^0.3.66"
 langchain-openai = "^0.3.25"
+langgraph = "^0.4.10"
+pdfplumber = "^0.11.7"
+docx = "^0.2.4"
+camelot = "^12.6.29"
 
 
 [build-system]
