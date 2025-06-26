@@ -17,6 +17,7 @@ pydantic = {extras = ["email"], version = "^2.11.7"}
 python-jose = "^3.5.0"
 python-multipart = "^0.0.20"
 bcrypt = "^4.3.0"
+langchain-core = "^0.3.66"
 
 
 [build-system]
