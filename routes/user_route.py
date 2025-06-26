@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from fastapi.security import OAuth2PasswordRequestForm
-from backend.models.user_model import User, UserInDB, Token
-from backend.container import ServicesContainer
+from models.user_model import User, UserInDB, Token
+from container import ServicesContainer
 
 user_router = APIRouter(prefix="/user")
 user_service = ServicesContainer.user_service()
