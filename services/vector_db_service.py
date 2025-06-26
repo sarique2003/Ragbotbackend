@@ -4,16 +4,16 @@ from pathlib import Path
 import pandas as pd
 import asyncio
 from dotenv import load_dotenv
-from backend.helpers import get_env_value
+from helpers import get_env_value
 
 load_dotenv()
 import pdfplumber
 import camelot
 import re
 import docx
-from backend.services.rag_service.base_vector_db import VectorDB
-from backend.models.vectordb_models import PineconeConfig
-from backend.services.rag_service.pinecone import PineconeDB
+from services.rag_service.base_vector_db import VectorDB
+from models.vectordb_models import PineconeConfig
+from services.rag_service.pinecone import PineconeDB
 from langchain.docstore.document import Document
 
 logger = logging.getLogger(__name__)
