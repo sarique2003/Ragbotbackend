@@ -5,10 +5,10 @@ from typing import Iterable, List, Optional, Tuple
 from langchain.docstore.document import Document
 from langchain_openai import AzureOpenAIEmbeddings
 
-from backend.services.rag_service.base_vector_db import VectorDB
-from backend.models.vectordb_models import PineconeConfig
+from services.rag_service.base_vector_db import VectorDB
+from models.vectordb_models import PineconeConfig
 
-from backend.helpers import get_env_value
+from helpers import get_env_value
 
 logger = logging.getLogger(__name__)
 DEFAULT_OPENAI_EMBEDDING_MODEL = "text-embedding-ada-002"
