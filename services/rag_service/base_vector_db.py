@@ -6,7 +6,7 @@ from typing import Iterable, List, Optional, Tuple
 from langchain.docstore.document import Document
 from langchain_openai import AzureOpenAIEmbeddings
 
-from backend.helpers import get_env_value
+from helpers import get_env_value
 
 logger = logging.getLogger(__name__)
 DEFAULT_OPENAI_EMBEDDING_MODEL = "text-embedding-ada-002"
